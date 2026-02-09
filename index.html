@@ -1,0 +1,513 @@
+<!-- wp:html -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <a href="#hero" class="logo">
+      <img src="http://localhost/wordpress/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-08-at-8.58.54-PM.jpeg" alt="ANUNNAKI LOGO">
+    </a>
+
+    <!-- MENU -->
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#join">Join Us</a></li>
+      <li><a href="C:\Users\PC\Desktop\New folder\index - Copy.html">
+        Anunnaki Museum
+      </a></li>
+    </ul>
+
+    <!-- MOBILE ICON -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  </div>
+</nav>
+
+<style>
+/* RESET */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#000;
+  border-bottom:1px solid #222;
+}
+
+.nav-container{
+  max-width:1300px;
+  margin:auto;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* LOGO */
+.logo img{
+  height:90px; /* تكبير اللوجو */
+  width:auto;
+}
+.logo img:hover{
+  transform:scale(1.05);
+}
+
+/* LINKS */
+.nav-links{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+.nav-links li a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  letter-spacing:1px;
+  font-size:16px;
+  position:relative;
+  transition:0.3s;
+  text-shadow:0 0 0 #fff;
+}
+
+/* Neon Hover لجميع الروابط */
+.nav-links li a:not(.museum-link):hover{
+  color:#00ffff; 
+  text-shadow:0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Anunnaki Museum لون جولد أصلي */
+.museum-link{
+  color:#D4AF37; /* Gold فاخر */
+  font-weight:700;
+  transition:0.3s;
+}
+
+.museum-link:hover{
+  color:#FFD700; /* Gold ساطع */
+  text-shadow:
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 20px #FFD700,
+    0 0 30px #FFD700,
+    0 0 40px #FFD700;
+}
+
+/* MOBILE */
+.menu-icon{
+  display:none;
+  font-size:32px;
+  color:#00ffff;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .nav-links{
+    position:absolute;
+    top:85px;
+    left:0;
+    width:100%;
+    background:#000;
+    flex-direction:column;
+    gap:20px;
+    padding:25px 0;
+    display:none;
+    z-index:999;
+  }
+  .nav-links.show{
+    display:flex;
+  }
+  .menu-icon{
+    display:block;
+  }
+  .nav-links li a{
+    font-size:18px;
+  }
+}
+</style>
+
+<script>
+function toggleMenu(){
+  document.querySelector('.nav-links').classList.toggle('show');
+}
+</script>
+<!-- /wp:html -->
+<!-- wp:html -->
+<!-- HERO SECTION -->
+<section id="hero" style="background:url('http://localhost/wordpress/wp-content/uploads/2026/01/c7a66e3c-0adc-4ce2-b667-cced88eeca16.jpg') center/cover no-repeat; height:90vh; position:relative; display:flex; align-items:center; justify-content:center;">
+  <!-- Overlay -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4);"></div>
+
+  <!-- Content -->
+  <div style="position:relative; text-align:center; max-width:800px; padding:0 20px;">
+    <h1 style="font-size:48px; color:#00ffff; text-shadow:0 0 10px #00ffff, 0 0 20px #00ff00; margin-bottom:15px;">
+      ANUNNAKI
+    </h1>
+    <p style="font-size:20px; color:#0f0; text-shadow:0 0 5px #0f0; margin-bottom:30px;">
+      Not just sneakers… a full party experience
+    </p>
+    <a href="#about" style="padding:15px 35px; background:#00ff00; color:#000; font-size:18px; border-radius:8px; font-weight:bold; text-decoration:none; text-shadow:0 0 5px #fff;">
+      Learn More
+    </a>
+  </div>
+</section>
+
+<!-- Responsive -->
+<style>
+  @media (max-width:768px){
+    #hero h1 { font-size:36px; }
+    #hero p { font-size:16px; }
+  }
+</style>
+<!-- /wp:html -->
+<!-- wp:html -->
+<!-- ABOUT / WHY ANUNNAKI SECTION -->
+<section id="about" style="background:#111; color:#fff; padding:80px 20px; text-align:center;">
+
+  <!-- Title -->
+  <h2 style="font-size:36px; color:#00ffff; text-shadow:0 0 10px #00ffff;">About Anunnaki</h2>
+
+  <!-- Story -->
+  <div style="max-width:800px; margin:30px auto; text-align:left;">
+    <h3 style="color:#0f0; text-shadow:0 0 5px #0f0;">Our Story</h3>
+    <p style="font-size:18px; line-height:1.6; color:#ccc;">
+      Anunnaki started with a vision to combine unique sneaker designs with the underground party culture. 
+      Every design tells a story and every color is crafted to match the vibe of the party scene.
+    </p>
+
+    <h3 style="color:#0f0; text-shadow:0 0 5px #0f0;">Our Vision</h3>
+    <p style="font-size:18px; line-height:1.6; color:#ccc;">
+      To be the ultimate brand that connects fashion, music, and lifestyle, making each wearer part of a global community.
+    </p>
+
+    <h3 style="color:#0f0; text-shadow:0 0 5px #0f0;">Why Anunnaki?</h3>
+    <p style="font-size:18px; line-height:1.6; color:#ccc;">
+      Because we bring unique designs, high-quality sneakers, and a vibe that no other brand can match. 
+      It’s not just sneakers, it’s a full experience.
+    </p>
+  </div>
+
+<!-- Single Button -->
+<div style="margin-top:40px;">
+  <a href="#collection" style="padding:15px 35px; background:#00ff00; color:#000; font-size:18px; border-radius:8px; font-weight:bold; text-decoration:none; text-shadow:0 0 5px #fff;">
+    Choose Your Product
+  </a>
+</div>
+
+</section>
+
+<!-- Responsive -->
+<style>
+  @media (max-width:768px){
+    #about h2 { font-size:28px; }
+    #about h3 { font-size:20px; }
+    #about p { font-size:16px; }
+    #about a { font-size:16px; padding:12px 25px; }
+  }
+</style>
+<!-- /wp:html -->
+<!-- wp:html -->
+<!-- COLLECTION SECTION -->
+<section id="collection" style="background:#111; color:#fff; padding:80px 20px; text-align:center;">
+  <h2 style="font-size:36px; color:#00ffff; text-shadow:0 0 10px #00ffff; margin-bottom:40px;">Our Collection</h2>
+
+  <div class="products-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+
+    <!-- PRODUCT 1 -->
+    <div class="product" style="text-align:center; width:300px;">
+      <img id="shoe1" src="http://localhost/wordpress/wp-content/uploads/2026/01/4.jpg.jpg" style="width:100%; border-radius:12px;">
+      <div class="colors" style="display:flex; justify-content:center; gap:8px; margin-top:10px;">
+        <span class="color" style="background:black" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/11.jpg.jpg'"></span>
+        <span class="color" style="background:white" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/4.jpg.jpg'"></span>
+        <span class="color" style="background:red" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/6.jpg.jpg'"></span>
+        <span class="color" style="background:blue" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/1.jpg.jpg'"></span>
+        <span class="color" style="background:green" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/7.jpg.jpg'"></span>
+        <span class="color" style="background:gray" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/2-1.jpg-1.jpg'"></span>
+        <span class="color" style="background:orange" onclick="document.getElementById('shoe1').src='http://localhost/wordpress/wp-content/uploads/2026/01/3.ipg_.jpg'"></span>
+      </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product" style="text-align:center; width:300px;">
+      <img id="shoe2" src="http://localhost/wordpress/wp-content/uploads/2026/01/004.jpg.jpeg" style="width:100%; border-radius:12px;">
+      <div class="colors" style="display:flex; justify-content:center; gap:8px; margin-top:10px;">
+        <span class="color" style="background:black" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/006.jpg.jpeg'"></span>
+        <span class="color" style="background:white" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/002.jpg.jpeg'"></span>
+        <span class="color" style="background:red" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/004.jpg.jpeg'"></span>
+        <span class="color" style="background:blue" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/001.jpg.jpeg'"></span>
+        <span class="color" style="background:green" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/003.jpg.jpeg'"></span>
+        <span class="color" style="background:gray" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/005.jpg.jpeg'"></span>
+        <span class="color" style="background:orange" onclick="document.getElementById('shoe2').src='http://localhost/wordpress/wp-content/uploads/2026/01/007.jpg.jpeg'"></span>
+      </div>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product" style="text-align:center; width:300px;">
+      <img id="shoe3" src="http://localhost/wordpress/wp-content/uploads/2026/01/06.jpg.jpeg" style="width:100%; border-radius:12px;">
+      <div class="colors" style="display:flex; justify-content:center; gap:8px; margin-top:10px;">
+        <span class="color" style="background:black" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/01.jpg.jpeg'"></span>
+        <span class="color" style="background:white" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/06.jpg.jpeg'"></span>
+        <span class="color" style="background:red" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/03.jpg.jpeg'"></span>
+        <span class="color" style="background:blue" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/04.jpg.jpeg'"></span>
+        <span class="color" style="background:green" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/02.jpg.jpeg'"></span>
+        <span class="color" style="background:gray" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/05.jpg.jpeg'"></span>
+        <span class="color" style="background:orange" onclick="document.getElementById('shoe3').src='http://localhost/wordpress/wp-content/uploads/2026/01/07.jpg.jpeg'"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BUTTONS UNDER ALL PRODUCTS -->
+  <div style="display:flex; justify-content:center; gap:20px; margin-top:30px; flex-wrap:wrap;">
+
+    <!-- WHATSAPP BUTTON -->
+    <style>
+      /* WhatsApp Button */
+      .whatsapp-btn{
+        display:inline-block;
+        padding:16px 40px;
+        border-radius:12px;
+        background:#25D366;
+        color:#fff;
+        font-weight:900;
+        letter-spacing:1.5px;
+        text-decoration:none;
+        box-shadow:
+          0 0 15px rgba(37,211,102,0.6),
+          inset 0 0 10px rgba(255,255,255,0.3);
+        transition:all 0.3s ease;
+      }
+      
+      .whatsapp-btn:hover{
+        transform:scale(1.05);
+        box-shadow:
+          0 0 25px rgba(37,211,102,0.9),
+          0 0 50px rgba(37,211,102,0.8);
+      }
+      </style>
+      
+      <a href="https://wa.me/201024345675" class="whatsapp-btn" target="_blank">
+        Order via WhatsApp
+      </a>
+
+    <!-- ANUNNAKI MUSEUM BUTTON -->
+    <style>
+      /* Anunnaki Museum Button */
+      .anunnaki-museum{
+        display:inline-block;
+        padding:16px 40px;
+        border-radius:12px;
+        background:linear-gradient(135deg,#d4af37,#ffd700,#b8860b);
+        color:#111;
+        font-weight:900;
+        letter-spacing:1.5px;
+        text-decoration:none;
+        box-shadow:
+          0 0 15px rgba(212,175,55,0.6),
+          inset 0 0 10px rgba(255,255,255,0.3);
+        transition:all 0.3s ease;
+      }
+      
+      .anunnaki-museum:hover{
+        transform:scale(1.05);
+        box-shadow:
+          0 0 25px rgba(255,215,0,0.9),
+          0 0 50px rgba(212,175,55,0.8);
+      }
+      </style>
+      
+      <a href="C:\Users\PC\Desktop\New folder\index - Copy.html " class="anunnaki-museum">
+        ANUNNAKI MUSEUM
+      </a>
+
+  </div>
+
+</section>
+
+<!-- RESPONSIVE -->
+<style>
+  @media (max-width:768px){
+    .products-container { flex-direction:column; gap:30px; }
+    .product { width:100%; }
+    .product a { font-size:16px; padding:12px 25px; }
+  }
+  .color { width:25px; height:25px; border-radius:50%; cursor:pointer; border:1px solid #ccc; display:inline-block; }
+</style>
+<!-- /wp:html -->
+<!-- wp:html -->
+<!-- FAQ SECTION -->
+<section id="faq" style="background:#0e1117; padding:80px 20px; color:#fff;">
+
+  <h2 style="
+    text-align:center;
+    font-size:36px;
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+    margin-bottom:50px;
+  ">
+    Frequently Asked Questions
+  </h2>
+
+  <div style="max-width:800px; margin:0 auto;">
+
+    <div style="margin-bottom:30px;">
+      <h3 style="color:#0f0;">How do I place an order?</h3>
+      <p style="color:#ccc; line-height:1.6;">
+        Choose your favorite design, take a screenshot, and send it to us on WhatsApp.
+        Our team will confirm your order instantly.
+      </p>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3 style="color:#0f0;">Do you offer custom colors?</h3>
+      <p style="color:#ccc; line-height:1.6;">
+        Yes. Each sneaker can be customized to match your vibe and party style.
+      </p>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3 style="color:#0f0;">How long does delivery take?</h3>
+      <p style="color:#ccc; line-height:1.6;">
+        Production usually takes a few days, and shipping is done as fast as possible.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="color:#0f0;">Is Anunnaki limited edition?</h3>
+      <p style="color:#ccc; line-height:1.6;">
+        Yes. Our drops are limited to keep every piece exclusive.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- /wp:html -->
+<!-- wp:html -->
+<!-- wp:html -->
+<!-- JOIN US + FOOTER -->
+<section id="join-us" style="
+  background:linear-gradient(180deg, #0b0f14, #000);
+  padding:80px 20px;
+  text-align:center;
+  color:#fff;
+">
+
+  <!-- Join Us -->
+  <h2 style="
+    font-size:36px;
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+    margin-bottom:20px;
+  ">
+    Join The Anunnaki Movement
+  </h2>
+
+  <p style="
+    max-width:700px;
+    margin:0 auto 40px;
+    font-size:18px;
+    line-height:1.6;
+    color:#ccc;
+  ">
+    Follow us and be part of the underground culture.  
+    Exclusive drops, party vibes, and real community.
+  </p>
+
+  <!-- Social Buttons -->
+  <div style="margin-bottom:60px;">
+    <a href="https://www.instagram.com/anunnaki.party?igsh=MWV5MGhoaWFhbGR5OA=="
+       target="_blank"
+       style="
+         display:inline-block;
+         margin:10px;
+         padding:14px 32px;
+         border-radius:30px;
+         background:#0f0;
+         color:#000;
+         font-weight:bold;
+         text-decoration:none;
+         text-shadow:0 0 5px #fff;
+       ">
+      Instagram
+    </a>
+
+    <a href="https://tiktok.com/@YOUR_TIKTOK"
+       target="_blank"
+       style="
+         display:inline-block;
+         margin:10px;
+         padding:14px 32px;
+         border-radius:30px;
+         background:#00ffff;
+         color:#000;
+         font-weight:bold;
+         text-decoration:none;
+         text-shadow:0 0 5px #fff;
+       ">
+      TikTok
+    </a>
+
+    <a href="https://www.snapchat.com/add/YOUR_SNAPCHAT"
+       target="_blank"
+       style="
+         display:inline-block;
+         margin:10px;
+         padding:14px 32px;
+         border-radius:30px;
+         background:#FFFC00;
+         color:#000;
+         font-weight:bold;
+         text-decoration:none;
+         text-shadow:0 0 5px #000;
+       ">
+      Snapchat
+    </a>
+  </div>
+
+  <!-- Divider -->
+  <div style="
+    width:120px;
+    height:2px;
+    background:#00ffff;
+    margin:0 auto 30px;
+    box-shadow:0 0 10px #00ffff;
+  "></div>
+
+  <!-- Footer -->
+  <h3 style="
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+    margin-bottom:10px;
+    font-size:24px;
+  ">
+    ANUNNAKI
+  </h3>
+
+  <p style="
+    max-width:600px;
+    margin:0 auto 20px;
+    color:#888;
+    line-height:1.6;
+    font-size:15px;
+  ">
+    Anunnaki is a sneaker brand inspired by underground parties,  
+    fearless expression, and limited designs made to stand out.
+  </p>
+
+  <p style="font-size:14px; color:#555;">
+    © 2026 Anunnaki. All rights reserved.
+  </p>
+
+</section>
+<!-- /wp:html -->
